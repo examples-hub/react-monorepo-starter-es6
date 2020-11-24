@@ -1,0 +1,86 @@
+{
+  "name": "react-monorepo-starter-es6",
+  "version": "1.0.0",
+  "private": true,
+  "description": "monorepo starter with npm workspaces",
+  "keywords": [
+    "template",
+    "quickstart"
+  ],
+  "homepage": "https://github.com/examples-hub/react-monorepo-starter-es6#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/examples-hub/react-monorepo-starter-es6.git"
+  },
+  "license": "MIT",
+  "author": "jinyaoo",
+  "workspaces": [
+    "packages/*",
+    "package-a"
+  ],
+  "scripts": {
+    "beautify": "prettier \"**/*.{js,json,yml,md}\" --write",
+    "beautify:check": "npm run prettier -- --check",
+    "clean": "rimraf \"packages/**/lib\"",
+    "dev": "",
+    "help": "echo 'exec npm run start to view the demo'",
+    "lint": "npm run format:check",
+    "lint:js": "",
+    "lint:style": "",
+    "prepare": "",
+    "publish": "",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": ""
+    }
+  },
+  "browserslist": [
+    "defaults",
+    "not IE 11",
+    "not IE_Mob 11"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.12.0",
+    "@babel/core": "^7.12.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.12.0",
+    "@babel/preset-env": "^7.12.0",
+    "@babel/preset-react": "^7.12.0",
+    "@mdx-js/loader": "^1.6.21",
+    "@webpack-cli/serve": "^1.1.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.3.1",
+    "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.1",
+    "cross-env": "^7.0.2",
+    "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "eslint": "7.14.0",
+    "eslint-config-alloy": "^3.8.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-mdx": "^1.8.2",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "html-webpack-plugin": "^4.5.0",
+    "husky": "^4.3.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.0",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-test-renderer": "^17.0.0",
+    "rimraf": "^3.0.2",
+    "style-loader": "^2.0.0",
+    "syncpack": "^5.6.10",
+    "terser-webpack-plugin": "^5.0.3",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=7.0.0"
+  }
+}
