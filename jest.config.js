@@ -1,8 +1,12 @@
 module.exports = {
   verbose: true,
-  setupFiles: ['<rootDir>/config/setupTests.js'],
+  testMatch: ['<rootDir>/**/*.test.(js|jsx)'],
+  setupFilesAfterEnv: ['<rootDir>/config/setupTests.js'],
   transform: {
     '^.+\\.js?$': 'babel-jest',
   },
-  testMatch: ['<rootDir>/**/*.test.(js|jsx)'],
+  moduleNameMapper: {
+    '^@examples-hub/sample-components':
+      '<rootDir>/packages/sample-components/src',
+  },
 };

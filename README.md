@@ -5,7 +5,7 @@
 ## overview
 
 - packaging-structure
-  - package-a: 工具包
+  - package-a: simple utils
   - packages
     - sample-app: simple react app
     - sample-components: simple react components

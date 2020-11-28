@@ -1,7 +1,6 @@
 {
   "name": "@examples-hub/react-monorepo-starter-es6",
   "version": "1.0.0",
-  "private": true,
   "description": "monorepo starter with npm workspaces",
   "keywords": [
     "template",
@@ -24,7 +23,7 @@
     "formatter": "prettier \"**/*.{js,json,yml,md}\" --write",
     "formatter:check": "npm run formatter -- --check",
     "help": "echo 'exec npm run start to view the demo'",
-    "lint": "npm run format:check",
+    "lint": "npm run formatter:check",
     "lint:js": "",
     "lint:style": "",
     "start": "",
@@ -52,6 +51,7 @@
     "@babel/preset-react": "^7.12.0",
     "@mdx-js/loader": "^1.6.21",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.4.3",
+    "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.2.2",
     "@webpack-cli/serve": "^1.1.0",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.3.1",
