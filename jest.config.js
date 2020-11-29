@@ -5,8 +5,8 @@ module.exports = {
   transform: {
     '^.+\\.js?$': 'babel-jest',
   },
-  moduleNameMapper: {
-    '^@examples-hub/sample-components':
-      '<rootDir>/packages/sample-components/src',
-  },
+  // moduleNameMapper: {
+  //   '^@examples-hub/sample-components':
+  //     '<rootDir>/packages/sample-components/src',
+  // },
 };

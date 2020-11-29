@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 // import log from 'package-a';
 import App from './App';
 
-import './index.css';
+// import './index.css';
 
 // log();
 

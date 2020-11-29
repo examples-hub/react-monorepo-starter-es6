@@ -1,4 +1,4 @@
-// production webpack config for back-garden-react
+// webpack config for production
 
 const path = require('path');
 const webpack = require('webpack');
