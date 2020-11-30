@@ -31,7 +31,7 @@
 - all dependencies are hoisted to top-level `node_modules` using npm workspaces(require npm 7+)
   - put all your deps of dev/build/test/engineering at top level
 
-## Usage
+## usage
 
 - requirements
   - npm 7.0.0+
@@ -66,6 +66,6 @@ npm start
   - support component story format
   - support mdx docs
 
-## License
+## license
 
 [MIT](https://opensource.org/licenses/MIT)

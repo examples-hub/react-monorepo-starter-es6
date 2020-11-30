@@ -8,7 +8,7 @@ export function App() {
     <div>
       <h1>本项目 react-monorepo-starter-es6</h1>
       <a href='https://github.com/examples-hub/react-monorepo-starter-es6'>
-        <h4>github repo 111</h4>
+        <h4>github repo</h4>
       </a>
       <div>
         <hr />
