@@ -13,3 +13,9 @@
 ## later
 
 - jest测试时最好从module字段读取import的包
+
+## wontfix
+
+- dev
+
+- styling

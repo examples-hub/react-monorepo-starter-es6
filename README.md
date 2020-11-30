@@ -12,7 +12,6 @@
     - sample-components: simple react components
 
 - all dependencies are hoisted to top-level `node_modules` using npm workspaces(require npm 7+)
-
   - put all your deps of dev/build/test/... in one place
 
 - components lib is compiled with babel
@@ -41,6 +40,9 @@ npm start
 - If you want to publish a package, it's better to point `main` to `dist` in the package.json
 
 ## todo
+
+- css url
+  - image url
 
 - storybook(too many breaking changes recently, not planned until stable)
   - support component story format

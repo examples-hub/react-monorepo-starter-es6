@@ -1,17 +1,23 @@
 import React from 'react';
 import { CheckboxWithLabel } from '@examples-hub/sample-components';
 
+import './index.css';
+
 export function App() {
   return (
     <div>
-      <h2>本项目 react-monorepo-starter-es6</h2>
+      <h1>本项目 react-monorepo-starter-es6</h1>
       <a href='https://github.com/examples-hub/react-monorepo-starter-es6'>
-        <h4>github repo</h4>
+        <h4>github repo 111</h4>
       </a>
       <div>
+        <hr />
         <input type='text' />
       </div>
-      <CheckboxWithLabel labelOn='On' labelOff='Off' />
+      <div>
+        <hr />
+        <CheckboxWithLabel labelOn='On' labelOff='Off' />
+      </div>
     </div>
   );
 }
