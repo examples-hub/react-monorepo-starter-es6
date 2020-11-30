@@ -1,5 +1,7 @@
 
-LICENSE.txt
+docs/
+dist/
 
+LICENSE.txt
 *.md
 *.mdx

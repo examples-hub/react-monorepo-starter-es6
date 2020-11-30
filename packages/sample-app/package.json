@@ -14,8 +14,8 @@
   "dependencies": {
     "@examples-hub/package-a": "1.0.0",
     "@examples-hub/sample-components": "1.0.0",
-    "react": "^17.0.0",
-    "react-dom": "^17.0.0"
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {}
 }
