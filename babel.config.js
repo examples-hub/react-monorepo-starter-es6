@@ -1,8 +1,7 @@
 module.exports = function (api) {
   // 若build依赖于env，就不要再指定api.cache为forever或never了
-  const env = api.env();
   // api.cache(true);
-
+  const env = api.env();
   const isProd = api.env('production');
 
   // Plugins run before Presets. Plugin ordering is first to last.
@@ -13,11 +12,11 @@ module.exports = function (api) {
   ].filter(Boolean);
 
   function configModule() {
-    if (env === 'test' || env === 'cjs') {
-      return 'commonjs';
+    if (env === 'esm' || env === 'es6') {
+      return false;
     }
-    // 默认会编译成esm
-    return false;
+    // 默认会编译成node自身的commonjs
+    return 'auto';
   }
 
   // Preset ordering is reversed (last to first).
@@ -25,21 +24,17 @@ module.exports = function (api) {
     [
       '@babel/preset-env',
       {
-        // modules: env === 'esm' ? false : 'commonjs',
+        // modules: env === 'esm' ? false : 'auto',
         modules: configModule(),
-        targets: {
-          node: 'current',
-          // browsers: '> 0.5%',
-        },
-        corejs: { version: 3, proposals: true },
+        targets: 'defaults',
+        // targets: '> 0.25%, not dead',
         useBuiltIns: 'usage',
+        corejs: { version: 3, proposals: true },
         debug: false,
       },
     ],
-    [
-      '@babel/preset-react',
-      { development: process.env.BABEL_ENV !== 'production' },
-    ],
+
+    ['@babel/preset-react', { development: env !== 'production' }],
   ];
 
   const ignore = ['node_modules'];

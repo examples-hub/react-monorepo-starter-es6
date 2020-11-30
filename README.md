@@ -8,7 +8,7 @@
   - react 17
   - monorepo
     - npm workspaces only, no lerna
-    - yarn workspace should work, but no tested here
+    - yarn workspace should work too, but not tested here
   - webpack 5
     - webpack config shared at top level with webpack-merge
     - hot reloading with react-refresh-webpack-plugin

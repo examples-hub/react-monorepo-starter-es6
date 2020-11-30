@@ -11,7 +11,7 @@ export function App() {
         <h4>github repo</h4>
       </a>
       <div>
-        <hr />
+        <br />
         <input type='text' />
       </div>
       <div>
